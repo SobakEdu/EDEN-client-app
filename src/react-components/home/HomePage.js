@@ -25,7 +25,7 @@ export function HomePage() {
   const { results: publicRooms } = usePublicRooms();
 
   const sortedFavoriteRooms = Array.from(favoriteRooms).sort((a, b) => b.member_count - a.member_count);
-  const sortedPublicRooms = Array.from(publicRooms).sort((a, b) => b.member_count - a.member_count);
+  //const sortedPublicRooms = Array.from(publicRooms).sort((a, b) => b.member_count - a.member_count);
 
   useEffect(() => {
     const qs = new URLSearchParams(location.search);
@@ -114,7 +114,7 @@ export function HomePage() {
           </Column>
         </Container>
       )}
-      {sortedPublicRooms.length > 0 && (
+      {false && (
         <Container className={styles.roomsContainer}>
           <h3 className={styles.roomsHeading}>
             <FormattedMessage id="home-page.public--rooms" defaultMessage="Public Rooms" />
@@ -158,13 +158,6 @@ export function HomePage() {
           </Column>
         </Container>
       )}
-      <Container>
-        <Column padding center grow>
-          <Button lg preset="primary" as="a" href="/link">
-            <FormattedMessage id="home-page.have-code" defaultMessage="Have a room code?" />
-          </Button>
-        </Column>
-      </Container>
     </PageContainer>
   );
 }
