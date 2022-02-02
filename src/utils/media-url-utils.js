@@ -6,6 +6,7 @@ if (configs.CORS_PROXY_SERVER) {
   nonCorsProxyDomains.push(configs.CORS_PROXY_SERVER);
 }
 nonCorsProxyDomains.push(document.location.hostname);
+nonCorsProxyDomains.push("https://eden-platform-assets.edenvr.live");
 
 const commonKnownContentTypes = {
   gltf: "model/gltf",
