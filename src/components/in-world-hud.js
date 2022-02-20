@@ -24,8 +24,14 @@
     };
 
     this.onTestMenu = () => {
-      // this.el.emit("action_invite");
+      // // this.el.emit("action_invite");
+      // let menu = document.querySelector(".user-menu");
+      // this.el.sceneEl.appendChild(menu);
+      // console.log(menu);
       console.log("menu button pressed");
+      const menu = document.querySelector(".user-menu");
+      menu.object3D.visible = !menu.object3D.visible;
+      // menu.test();
     };
 
     this.onHubUpdated = e => {

@@ -2,7 +2,7 @@ AFRAME.registerComponent("follow-in-fov", {
   schema: {
     target: { type: "selector" },
     offset: { type: "vec3" },
-    speed: { type: "number", default: 0.003 },
+    speed: { type: "number", default: 0.0022 },
     angle: { type: "number", default: 45 }
   },
 

@@ -257,6 +257,9 @@ import { OAuthScreenContainer } from "./react-components/auth/OAuthScreenContain
 import { SignInMessages } from "./react-components/auth/SignInModal";
 import { ThemeProvider } from "./react-components/styles/theme";
 
+import "./components/user-menu"
+
+
 const PHOENIX_RELIABLE_NAF = "phx-reliable";
 NAF.options.firstSyncSource = PHOENIX_RELIABLE_NAF;
 NAF.options.syncSource = PHOENIX_RELIABLE_NAF;

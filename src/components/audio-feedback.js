@@ -286,11 +286,11 @@ AFRAME.registerComponent("mic-button", {
     this.hovering = false;
     this.onHover = () => {
       this.hovering = true;
-      this.data.tooltip.setAttribute("visible", true);
+      // this.data.tooltip.setAttribute("visible", true);
     };
     this.onHoverOut = () => {
       this.hovering = false;
-      this.data.tooltip.setAttribute("visible", false);
+      // this.data.tooltip.setAttribute("visible", false);
     };
   },
 
